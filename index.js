@@ -30,7 +30,9 @@ app.post('/bfhl', (req, res) => {
     res.status(500).json({ "is_success": false, "error": error.message });
   }
 });
-
+app.get('/bfhl',(req,res)=>{
+  console.log("hello world");
+})
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
